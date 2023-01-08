@@ -1,0 +1,173 @@
+.AllContents {
+  width: 40vw;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1%;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.TodoText {
+  text-align: center;
+  font-size: 3.5vw;
+  border-bottom: 1px solid gray;
+}
+.Form [type="text"] {
+  width: 100%;
+  margin-top: 0.5vw;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  outline: none;
+}
+.AddButton {
+  width: 100%;
+  font-size: 1.5vw;
+  outline: none;
+  border: none;
+  background-color: #2d3630;
+  color: #ffffff;
+  margin-top: 0.5vw;
+  transition: 0.2s ease-in-out;
+}
+.AddButton:active {
+  width: 99.99%;
+  font-size: 1.4vw;
+}
+::placeholder {
+  font-size: 1.3vw;
+  color: black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+  width: 100%;
+  font-size: 2vw;
+  text-align: left;
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 2px;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+.trashIcon {
+  font-size: 1.5vw;
+  padding: 1px;
+  position: relative;
+  top: 2px;
+  color: #bb4949;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.trashIcon:hover {
+  color: #ff0000;
+}
+.trashButton {
+  float: right;
+  position: relative;
+  outline: none;
+  width: 2vw;
+  height: 2vw;
+  top: 2px;
+}
+.RemoveAllButton {
+  width: 10vw;
+  font-size: 1vw;
+  padding: 0.4vw;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: #1f1f1f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.RemoveAllButton:hover {
+  border: 1px solid gray;
+  color: red;
+}
+
+/* ------Responsiveness-------------- */
+@media screen and (max-width: 600px) {
+  .AllContents {
+    width: 95vw;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+  .TodoText {
+    text-align: center;
+    font-size: 6vw;
+    border-bottom: 1px solid gray;
+  }
+  .Form [type="text"] {
+    width: 100%;
+    margin-top: 1vw;
+    padding: 1vw;
+    font-size: 3vw;
+    outline: none;
+  }
+  .AddButton {
+    width: 100%;
+    font-size: 3vw;
+    outline: none;
+    margin-top: 1vw;
+  }
+  ::placeholder {
+    font-size: 3vw;
+    color: black;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul > li {
+    width: 100%;
+    font-size: 3.5vw;
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    overflow: auto;
+    background-color: #f1f1f1;
+  }
+  .trashIcon {
+    font-size: 3.5vw;
+    position: relative;
+    top: 1.5px;
+    color: #bb4949;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+  .trashIcon:hover {
+    color: #ff0000;
+  }
+  .trashButton {
+    float: right;
+    position: relative;
+    outline: none;
+    width: 5vw;
+    height: 5vw;
+    top: 0px;
+  }
+  .RemoveAllButton {
+    width: 25vw;
+    font-size: 2.5vw;
+    padding: 1vw;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #1f1f1f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .RemoveAllButton:hover {
+    border: 1px solid gray;
+    color: red;
+  }
+}
